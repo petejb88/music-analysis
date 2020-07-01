@@ -14,12 +14,14 @@ args = parser.parse_args()
 
 
 
-
-
-
+# notearray:
+# 
 
 def clean_notearray(notearray_path):
     '''
+    Note arrays from Josquin have headers which give important metadata for the file, but which are not needed for the analysis. 
+    This function removes them. 
+
     args:
          notearray_path: location of notearray.txt
     output:
